@@ -10,6 +10,12 @@
 public class Application {
     public static void main(String[] args) throws Exception {
         String palindrome = "Was it a car or a cat I saw";
-        System.out.println(Palindrome.testPalindrome(palindrome));
+        String notPalindrome = "Marti";
+
+        System.out.println("Input String: " + palindrome);
+        System.out.println("Is it a palindrome: " + Palindrome.testPalindrome(palindrome));
+        
+        System.out.println("Input String: " + notPalindrome);
+        System.out.println("Is it a palindrome: " + Palindrome.testPalindrome(notPalindrome));
     }
 }
