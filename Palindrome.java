@@ -30,22 +30,15 @@ public class Palindrome {
                 charStack.push(charToAdd);
         }
         
-        // Index to keep track of character index
-        int i = 0;
-        
         // Compare characters to the ones in the stack
-        while (!charStack.isEmpty()) {
+        for(int i = 0; i <= charr.length/2; i++ ) { //Only compare half the string
             // Skip non-alphabetic characters in the input string
-            if (charr[i] < 'a' || charr[i] > 'z') {
-                i++;
+            if (charr[i] < 'a' || charr[i] > 'z')
                 continue;
-            }
-            
+            System.out.println(charr[i]);
             // If characters don't match, return false
             if (charr[i] != charStack.pop()) 
                 return false; // Not a palindrome
-            
-            i++;
         }
         
         // If we made it here, we know its a palindrome
